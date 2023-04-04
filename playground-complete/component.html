@@ -9,6 +9,7 @@
 <body>
   <div id="app">
     <app-header></app-header>
+    <app-content></app-content>
     <app-footer></app-footer>
   </div>
 
@@ -23,7 +24,11 @@
     // Vue.component('컴포넌트 이름', 컴포넌트 내용);
     Vue.component('app-header', {
       template: '<h1>Header</h1>'
-    });  
+    });
+    
+    Vue.component('app-content', {
+      template: '<div>content</div>'
+    });
 
     new Vue({
       el: '#app',
